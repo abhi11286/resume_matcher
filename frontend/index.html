@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Matcher — AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='companies.html'">Companies</button>
+    <button onclick="location.href='contact.html'">Contact</button>
+  </aside>
+
+  <main class="main">
+    
+    <header class="header">
+      <h1>Resume Matcher</h1>
+      <p>AI-powered job matching (BERT embeddings)</p>
+    </header>
+
+    <section class="upload-section">
+      <label class="file-input" for="file">
+        <input id="file" type="file" accept=".pdf,.docx,.txt">
+        <span id="fileName">Choose a resume file</span>
+      </label>
+      <button id="uploadBtn" class="btn">Upload & Match</button>
+      <div id="status">Status: Idle</div>
+    </section>
+
+    <section id="results" class="results">
+      <h2>Top Matches</h2>
+      <div id="resultsList"></div>
+    </section>
+    <section class="companies-grid">
+  <!-- Row 1: 4 companies -->
+  <div class="company-card">
+    <img src="C:\Users\Abhisheak\Desktop\resume-matcher\assets\ibm.png" alt="IBM Logo">
+    <p>Innovating cloud and AI solutions worldwide.</p>
+  </div>
+  <div class="company-card">
+    <img src="assets/accenture.png" alt="Accenture Logo">
+    <p>Leading global professional services and consulting.</p>
+  </div>
+  <div class="company-card">
+    <img src="assets/infosys.png" alt="Infosys Logo">
+    <p>Driving digital transformation with technology.</p>
+  </div>
+  <div class="company-card">
+    <img src="C:\Users\Abhisheak\Desktop\resume-matcher\assets\Google.png" alt="Google Logo">
+    <p>Organizing the world’s information and AI solutions.</p>
+  </div>
+
+  <!-- Row 2: 3 companies -->
+  <div class="company-card">
+    <img src="C:\Users\Abhisheak\Desktop\resume-matcher\assets\microsoft.png" alt="Microsoft Logo">
+    <p>Empowering every person and organization on the planet.</p>
+  </div>
+  <div class="company-card">
+    <img src="assets/apple.png" alt="Apple Logo">
+    <p>Innovative consumer tech and design leader.</p>
+  </div>
+  <div class="company-card">
+    <img src="assets/amazon.png" alt="Amazon Logo">
+    <p>World’s largest e-commerce and cloud provider.</p>
+  </div>
+
+  <!-- Row 3: More companies note -->
+  <div class="more-companies">
+    <p>100+ more companies hiring!</p>
+  </div>
+</section>
+<!-- niche name add ho file ke  -->
+<div class="upload-box">
+  <h2>Upload Resume</h2>
+  <input type="file" id="file" accept=".pdf,.doc,.docx">
+  <button id="uploadBtn">Upload</button>
+  <p id="status"></p>
+</div>
+
+<div id="results"></div>
+
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:support@resumematcher.ai">support@resumematcher.ai</a></p>
+      <p>Phone: +91 9755#2#734</p>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-section">
+      <h4>Address</h4>
+      <p>123 sherpua, vidisha City, India</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://instagram.com/demo" target="_blank">
+          <img src="assets/instagram.png" alt="Instagram Logo">
+        </a>
+        <a href="https://youtube.com/demo" target="_blank">
+          <img src="assets/youtube.png" alt="YouTube Logo">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Resume Matcher • Built with ❤️</p>
+  </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

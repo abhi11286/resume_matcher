@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+sentence-transformers
+torch   # sentence-transformers will require a backend; pip may install automatically but include it
+pdfplumber
+python-docx
